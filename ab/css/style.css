@@ -1,0 +1,147 @@
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-tab {
+            background-color: #ef5661;
+            color: #fff;
+            width: 250px;
+            height: 45px;
+            border-radius: 0 0 30px 30px;
+        }
+
+        section {
+            padding: 5px 30px;
+        }
+
+        .im {
+            border-radius: 5px;
+        }
+
+        .bax {
+            height: 40px;
+            margin-left: 5px;
+            border-radius: 5px;
+            width: 180px;
+            background-color: rgb(54, 196, 54);
+        }
+
+        .fon {
+
+            font-size: .68rem;
+            text-decoration: none;
+            color: #8b8b8b;
+        }
+
+        .deco {
+            text-decoration: none;
+            color: #8b8b8b;
+
+        }
+
+        .sidebar-imgs {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+
+        .brands-img {
+            width: 125px;
+            height: 95px;
+        }
+
+        .h {
+            height: 270px;
+        }
+
+        .foter {
+            font-size: .80rem;
+            /* height: 50px; */
+            background-color: #8b8b8b;
+        }
+
+        .input {
+            border-radius: 5px;
+            height: 35px;
+            background-color: #ededed;
+            width: 60%;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .q {
+            width: 20px;
+        }
+
+        .mine-icon {
+            color: #828282;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .form-mine {
+            padding: 5px;
+            padding-left: 70px;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            margin: 50px 0;
+            border-left: 1px solid black;
+        }
+
+        .input-form {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            color: #828282;
+        }
+
+        .text-mine {
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+
+        input {
+            font-size: .68rem;
+            padding: 5px;
+            
+        }
+        
+        .mine-checkbox {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            padding: 2px 0;
+            font-size: .90rem;
+        }
+
+        .text-mine-inside {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .all-media {
+            box-shadow: 0 0 5px 0px rgba(151, 151, 151, 0.26);
+            border-radius: 2px;}
+
+            .smal{
+                color: #ef5661;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .900rem;
+                flex-direction: column;
+            }

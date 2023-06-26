@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sine_in</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css.map">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #f5f5f5;">
+    <!-- ---------------------hader-------------------------------------- -->
+    <header class="bg-white">
+        <div class="container">
+            <div class="row top-header d-flex justify-content-between">
+                <div class="col-md-10 d-flex mt-2">
+                    <div>
+                        <div class=" d-flex">
+                            <span class=" mx-2 text-muted">فروشگاه اینترنتی دیجی کالا </span>
+                            <span class=" mx-2"><a href="#" class="text-decoration-none text-muted"> وارد شوید <i
+                                        class="bi bi-box-arrow-in-right"></i></i></a></span>
+                            <span class=" mx-2"><a href="#" class="text-decoration-none text-muted"> ثبت نام کنید <i
+                                        class="bi bi-person-add"></i></a></span>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex  mt-3 ">
+                                <div class="text-white d-flex justify-content-between bax">
+                                    <i class="bi bi-basket p-1 m-1"
+                                        style=" background-color: rgb(61, 179, 32); border-radius:5px;"></i>
+                                    <span class=" mt-1">سبد خرید</span>
+                                    <span class="badge bg-op ml-3  m-1 p-2"
+                                        style="background-color: rgb(61, 179, 32); border: radius 5px;">0</span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <form action="" method="post" class="d-flex">
+                                        <input type="text" class="form-control" placeholder="نام کتاب خود را جست و جو کنید... 
+                                    " aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend">
+                                            <button class="input-group-text btn btn-primary  text-white"
+                                                id="basic-addon1"><i class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img style="width: 150px; height: 150px;" src="img/logo-cofe.png" alt="camra"
+                    class="img-fluid d-none d-lg-block">
+            </div>
+        </div>
+    </header>
+    <!-- ---------------------------navbar---------------------------------------- -->
+    <nav class="navbar navbar-expand-md px-5 navbar-light bg-light border-top border-bottom border-secondary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link " href="#"> کتاب داستان زدگی <i class="bi bi-balloon-heart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> کتاب دانشگاهی <i class="bi bi-book"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> کتاب درسی <i class="bi bi-journal-text"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> کتاب عمومی <i class="bi bi-journal-bookmark-fill"></i><span
+                            class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- --------------------------------------------mine------------------------------------------ -->
+    <div class="container mine-icon all-media">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="100" fill="currentColor"
+            class="bi bi-person-fill-add" viewBox="0 0 16 16">
+            <path
+                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path
+                d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+        </svg>
+        <h5>به کافه بوک بپیوندید</h5>
+    </div>
+    <!-- -------------------------------------------------input-form------------------------------------- -->
+    <div class="container bg-white mb-3 all-media">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <form action="" method="post" class="form-mine" name="myForm" id="myForm">
+                    <div class="input-form">
+                        <span>پست الکترونیک</span>
+                        <div id="email-div">
+                            <input type="text" id="Email" placeholder="Email" required>
+                        </div>
+
+                    </div>
+                    <div class="input-form">
+                        <span>کلمه ی عبور</span>
+
+                        <input type="password" id="password" maxlength="20" minlength="8" placeholder="password"
+                            required>
+
+                    </div>
+                    <div class="input-form" style="margin-bottom: 40px;">
+                        <span>تکرار کلمه عبور</span>
+                        <div id="pass-div">
+                        <input type="password" id="password2" maxlength="20" minlength="8" placeholder="password"
+                            required>
+                        </div>
+                    </div>
+                    <div class="mine-checkbox">
+                        <input id="ss" type="checkbox">
+                        <a href="" style="text-decoration: none; margin-right: 5px; border-bottom: 1px dashed black;">
+                            شرایت را قبول کردم</a>
+                    </div>
+                    <div class="mine-checkbox">
+                        <input id="" type="checkbox">
+                        <span>مرا به خواطر بسبار</span>
+                    </div>
+                    <button type="button" id="btn-checked" onclick="set()" class="btn btn-primary">ورود در کافه بوک</button>
+                </form>
+            </div>
+            <!-- ------------------------------------icons and text----------------------------------------------- -->
+            <div class="col-12 col-lg-6">
+                <div class="text-mine">
+                    <div class="text">
+                        <i class="bi bi-basket-fill mb-3"></i>
+                        <i class="bi bi-border-style mb-3"></i>
+                        <i class="bi bi-chat-square-heart-fill mb-3"></i>
+                        <i class="bi bi-chat-text mb-3"></i>
+                        <i class="bi bi-percent mb-3"></i>
+
+                    </div>
+                    <div class="text-mine-inside">
+
+                        <p class="mb-3">سریع و ساده تر خرید کنید</p>
+                        <p class="mb-3">به سادگی سوابق خرید و فعالیت های خود را مدیریت کنید</p>
+                        <p class="mb-3">لیست علاقه مندی های خود را بسازید و تغییرات آن را دنبال کنید</p>
+                        <p class="mb-3">نقد , بررسی و نظرات خود را با دیگران در میان بگذارید</p>
+                        <p class="mb-3">در جریان فروش های ویژه و قیمت روز محصولات قرار بگیرید</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------foter------------------------------------ -->
+    <div class="foter pt-3 pb-3">
+        <div class="container text-white px-5 ">
+            <div class="row ">
+                <div class=" col-12 col-md-3 pb-2">7 روز هفته , 24 ساعته پاسخگوی شما هستیم</div>
+                <div class=" col-12 col-md-3 pb-2"><i class="bi bi-phone"></i> 09025240670 | 021-65256530</div>
+                <div class=" col-12 col-md-3 pb-2"><i class="bi bi-question-square"></i> سوالات متداول</div>
+                <div class=" col-12 col-md-3 pb-2"><i class="bi bi-envelope-at-fill"></i>Abolfazlhaji2005@gmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- ----------------------------texts-------------------------------------------- -->
+                <div class=" col-12 col-md-3 d-flex mb-2 flex-column ">
+                    <p class="pb-4"><b> کالا هایی که دیدن کردید</b></p>
+                    <a href="" class="deco pb-2">تماس با ما </a>
+                    <a href="" class="deco pb-2">دی جی بن چیست؟</a>
+                    <a href="" class="deco pb-2">نحوی خرید</a>
+                    <a href="" class="deco pb-2">تماس با ما</a>
+                </div>
+                <div class="col-12 col-md-3 mb-2 d-flex flex-column">
+                    <p class="pb-4"><b> کالا هایی که دیدن کردید</b></p>
+                    <a href="" class="deco pb-2">تماس با ما </a>
+                    <a href="" class="deco pb-2">دی جی بن چیست؟</a>
+                    <a href="" class="deco pb-2">نحوی خرید</a>
+                    <a href="" class="deco pb-2">تماس با ما</a>
+                </div>
+                <!-- ------------------input-imgs-icons--------------------------------------------------------------------- -->
+                <div class="col-12 col-md-6">
+                    <p class="pb-2 "><b> در شبکه های احتماعی با ما همراه باشید </b></p>
+                    <p class="text-muted"> از تخفیف ها و جدید ترین های کافه بوک با خبر شید</p>
+                    <form action="">
+                        <input type="text" class="input mt-2 ms-3" placeholder="آدرس ایمیل خود را وارد کنید...">
+                        <button class="btn btn-primary">تایید ایمیل</button>
+                    </form>
+                    <!-- ------------------------------------------------------------------------------------- -->
+                    <ul class="pr-0 mt-5">
+                        <li class="list-inline-item" style="width: 30px; height: 30px;"><i
+                                class="bi bi-facebook text-primary"></i></li>
+                        <li class="list-inline-item"><i class="bi bi-twitter text-primary"></i></li>
+                        <li class="list-inline-item"><i class="bi bi-linkedin text-primary"></i></li>
+                        <li class="list-inline-item"><i class="bi bi-google text-danger"></i></li>
+                        <li class="list-inline-item"><i class="bi bi-instagram text-danger"></i></li>
+                        <li class="list-inline-item"><i class="bi bi-telegram text-primary"></i></li>
+                        <li class="list-inline-item"><img src="img/sibapp.png" alt="" class="img-fluid"></li>
+                        <li class="list-inline-item"><img src="img/cafebazar.png" alt="" class="img-fluid"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="sinin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</html>
